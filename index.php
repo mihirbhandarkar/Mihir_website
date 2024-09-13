@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head> 
+  <title>PHP</title> 
+</head> 
 <body>
 
 <h1>Button</h1>
@@ -14,10 +17,16 @@
 <p id="result"></p>
 <p id="reading"></p>
 
+<?PHP
+echo shell_exec("python3 test.py 'Parameter1'");
+?>
+
 
 <script>
   function test(){
     console.log("Hello world!");
+
+
   }
   function myFunction() { 
     const xhr = new XMLHttpRequest();
